@@ -13,6 +13,7 @@
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
@@ -33,7 +34,8 @@
                 </EventTrigger>
             </Image.Triggers>-->
         </Image>
+        <TextBlock Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" FontSize="40" FontWeight="SemiBold">Nice workout today!</TextBlock>
         
-        <view:MultibeatControl Grid.Row="1" VerticalAlignment="Bottom"/>
+        <view:MultibeatControl Grid.Row="2" VerticalAlignment="Bottom"/>
     </Grid>
 </UserControl>
