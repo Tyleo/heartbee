@@ -18,22 +18,23 @@
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="0" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage0Command}">
-                <Image Source="{Binding Image0Source, Mode=OneWay}"/>
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage0Command}" Tap="Button_Tap">
+                 <Image Source="{Binding Image0Source, Mode=OneWay}"/>
             </Button>
         </Border>
         <Border Grid.Column="1" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage1Command}">
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage1Command}"
+                    Tap="Button_Tap_1">
                 <Image Source="{Binding Image1Source, Mode=OneWay}"/>
             </Button>
         </Border>
         <Border Grid.Column="2" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage2Command}">
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage2Command}" Tap="Button_Tap_2">
                 <Image Source="{Binding Image2Source, Mode=OneWay}"/>
             </Button>
         </Border>
         <Border Grid.Column="3" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage3Command}">
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage3Command}" Tap="Button_Tap_3">
                 <Image Source="{Binding Image3Source, Mode=OneWay}"/>
             </Button>
         </Border>

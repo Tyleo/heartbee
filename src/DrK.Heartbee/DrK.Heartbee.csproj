@@ -117,6 +117,12 @@
     <Compile Include="View\CenterHeartbeat.xaml.cs">
       <DependentUpon>CenterHeartbeat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\HeartbeeControl.xaml.cs">
+      <DependentUpon>HeartbeeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\HeartbeePageControl.xaml.cs">
+      <DependentUpon>HeartbeePageControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MultibeatControl.xaml.cs">
       <DependentUpon>MultibeatControl.xaml</DependentUpon>
     </Compile>
@@ -134,10 +140,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\FourContentSwitchingControl.xaml">
-        <SubType>Designer</SubType>
-        <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CenterHeartbeat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HeartbeeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HeartbeePageControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,6 +182,8 @@
     <Content Include="Assets\calendar.png" />
     <Content Include="Assets\heart-red.png" />
     <Content Include="Assets\heart.png" />
+    <Content Include="Assets\heartbee.png" />
+    <Content Include="Assets\heartbee-unhappy.png" />
     <Content Include="Assets\Heartwave.png" />
     <Content Include="Assets\pulse-red.png" />
     <Content Include="Assets\pulse.png" />

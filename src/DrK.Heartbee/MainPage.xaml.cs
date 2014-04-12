@@ -19,6 +19,11 @@ namespace DrK.Heartbee
             DataContext = ((DrK.Heartbee.App)App.Current).MainViewModel;
             InitializeComponent();
 
+            Selector.Image0Command = ContentPort.SelectContent0Command;
+            Selector.Image1Command = ContentPort.SelectContent1Command;
+            Selector.Image2Command = ContentPort.SelectContent2Command;
+            Selector.Image3Command = ContentPort.SelectContent3Command;
+
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }

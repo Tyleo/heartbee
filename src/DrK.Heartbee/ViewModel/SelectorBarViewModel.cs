@@ -163,10 +163,26 @@ namespace DrK.Heartbee.ViewModel
         {
             _notifyPropertyChangedManager = new NotifyPropertyChangedManager(this, NotifyPropertyChangedAsyncFlags.None);
 
-            _selectImage0Command = new ActionCommand((o) => SelectImage0());
-            _selectImage1Command = new ActionCommand((o) => SelectImage1());
-            _selectImage2Command = new ActionCommand((o) => SelectImage2());
-            _selectImage3Command = new ActionCommand((o) => SelectImage3());
+            _selectImage0Command = new ActionCommand(
+                (o) =>
+                {
+                    SelectImage0();
+                });
+            _selectImage1Command = new ActionCommand(
+                (o) =>
+                {
+                    SelectImage1();
+                });
+            _selectImage2Command = new ActionCommand(
+                (o) =>
+                {
+                    SelectImage2();
+                });
+            _selectImage3Command = new ActionCommand(
+                (o) =>
+                {
+                    SelectImage3();
+                });
 
             _image0Source0 = image0Source0;
             _image0Source1 = image0Source1;
