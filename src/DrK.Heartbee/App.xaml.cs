@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DrK.Heartbee.ViewModel;
+using DrK.Heartbee.Resources;
+using System;
 using System.Diagnostics;
 using System.Resources;
 using System.Windows;
@@ -12,6 +14,22 @@ namespace DrK.Heartbee
 {
     public partial class App : Application
     {
+        private readonly MainViewModel _mainViewModel =
+            new MainViewModel(
+                new SelectorBarViewModel(
+                    AppResources.heartIconSource,
+                    AppResources.heartRedIconSource,
+                    AppResources.barGraphIconSource,
+                    AppResources.barGraphRedIconSource,
+                    AppResources.calendarIconSource,
+                    AppResources.calendarRedIconSource,
+                    AppResources.pulseIconSource,
+                    AppResources.pulseRedIconSource
+                )
+            );
+
+        public MainViewModel MainViewModel { get { return _mainViewModel; } }
+
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

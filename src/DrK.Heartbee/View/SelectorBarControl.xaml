@@ -18,23 +18,23 @@
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="0" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="{Binding Image0Source}"/>
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage0Command}">
+                <Image Source="{Binding Image0Source, Mode=OneWay}"/>
             </Button>
         </Border>
         <Border Grid.Column="1" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="{Binding Image1Source}"/>
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage1Command}">
+                <Image Source="{Binding Image1Source, Mode=OneWay}"/>
             </Button>
         </Border>
         <Border Grid.Column="2" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="{Binding Image2Source}"/>
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage2Command}">
+                <Image Source="{Binding Image2Source, Mode=OneWay}"/>
             </Button>
         </Border>
         <Border Grid.Column="3" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="{Binding Image3Source}"/>
+            <Button Margin="0" BorderThickness="0" Command="{Binding SelectImage3Command}">
+                <Image Source="{Binding Image3Source, Mode=OneWay}"/>
             </Button>
         </Border>
     </Grid>

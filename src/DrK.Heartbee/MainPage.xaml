@@ -14,13 +14,7 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
 
-    <Grid Height="800" VerticalAlignment="Top">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+    <Grid Height="100" VerticalAlignment="Top">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
@@ -31,27 +25,8 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-
-        <Border Grid.Column="0" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="/Assets/heart.png"/>
-            </Button>
-        </Border>
-        <Border Grid.Column="1" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="/Assets/bar-graph.png"/>
-            </Button>
-        </Border>
-        <Border Grid.Column="2" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="/Assets/calendar.png"/>
-            </Button>
-        </Border>
-        <Border Grid.Column="3" BorderBrush="White" BorderThickness="2">
-            <Button Margin="0" BorderThickness="0">
-                <Image Source="/Assets/pulse.png"/>
-            </Button>
-        </Border> 
+    <Grid>
+        <view:SelectorBar DataContext="{Binding SelectorBarViewModel}" Height="100" VerticalAlignment="Top"/>
         
         <view:CenterHeartbeat Grid.Column ="1" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2" />        
         <view:MultibeatControl Grid.Column ="0" Grid.ColumnSpan="4"  Grid.Row ="7"/>

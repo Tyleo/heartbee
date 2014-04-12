@@ -109,11 +109,15 @@
     <Compile Include="Utilities\Extensions\PropertyChangedEventHandlerExtensions.cs" />
     <Compile Include="Utilities\Managers\NotifyPropertyChangedAsyncFlags.cs" />
     <Compile Include="Utilities\Managers\NotifyPropertyChangedManager.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\SelectorBarViewModel.cs" />
+<<<<<<< HEAD
+    <Compile Include="ViewModel\SelectorBarModel.cs" />
     <Compile Include="View\CenterHeartbeat.xaml.cs">
       <DependentUpon>CenterHeartbeat.xaml</DependentUpon>
     </Compile>
+=======
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\SelectorBarViewModel.cs" />
+>>>>>>> b043787d8e6ccc852a70eb2597e3a3317725dc34
     <Compile Include="View\MultibeatControl.xaml.cs">
       <DependentUpon>MultibeatControl.xaml</DependentUpon>
     </Compile>
