@@ -15,6 +15,16 @@
     shell:SystemTray.IsVisible="False">
     
     <Grid>
-        <view:SelectorBar DataContext="{Binding SelectorBarViewModel}" Height="100" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <view:SelectorBar Grid.Row="0" DataContext="{Binding SelectorBarViewModel}" VerticalAlignment="Top" Height="100"/>
+        <view:FourContentSwitchingControl Grid.Row="1">
+            <view:FourContentSwitchingControl.Content0>
+                <Button/>
+            </view:FourContentSwitchingControl.Content0>
+
+        </view:FourContentSwitchingControl>
     </Grid>
 </phone:PhoneApplicationPage>

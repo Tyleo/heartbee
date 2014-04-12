@@ -8,7 +8,6 @@ using System.Windows.Markup;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using DrK.Heartbee.Resources;
 
 namespace DrK.Heartbee
 {

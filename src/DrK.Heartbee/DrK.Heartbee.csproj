@@ -111,6 +111,9 @@
     <Compile Include="Utilities\Managers\NotifyPropertyChangedManager.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\SelectorBarViewModel.cs" />
+    <Compile Include="View\FourContentSwitchingControl.xaml.cs">
+      <DependentUpon>FourContentSwitchingControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MultibeatControl.xaml.cs">
       <DependentUpon>MultibeatControl.xaml</DependentUpon>
     </Compile>
@@ -124,6 +127,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FourContentSwitchingControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
