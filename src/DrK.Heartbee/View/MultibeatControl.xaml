@@ -10,7 +10,7 @@
     d:DesignHeight="480" d:DesignWidth="480">
     
     <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
-        <Image Name="redwave" Source="/Assets/redwave.png" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Image Name="redwave" Source="/Assets/redwave.png" Margin="0" Stretch="Fill">
             <Image.RenderTransform>
                 <TranslateTransform X="0"/>
             </Image.RenderTransform>
@@ -21,7 +21,7 @@
                         <Storyboard
                             Storyboard.TargetName="redwave">
                             <DoubleAnimation
-                            Storyboard.TargetProperty="(UIELement.RenderTransform).(TranslateTransform.X)"
+                                Storyboard.TargetProperty="(UIELement.RenderTransform).(TranslateTransform.X)"
                                 From="-1000"
                                 To="1000"
                                 Duration="00:00:03"
@@ -31,6 +31,7 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Image Source="/Assets/HeartWave.png" />
+
+        <Image Source="/Assets/HeartWave.png" Stretch="Fill"/>
     </Grid>
 </UserControl>
