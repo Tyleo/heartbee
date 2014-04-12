@@ -25,16 +25,16 @@
 
         <view:FourContentSwitchingControl x:Name="ContentPort" Grid.Row="1">
             <view:FourContentSwitchingControl.Content0>
-                <view:HeartbeeControl/>
+                <view:HeartbeePageControl/>
             </view:FourContentSwitchingControl.Content0>
             <view:FourContentSwitchingControl.Content1>
-                <TextBlock Text="1"/>
+                <view:GraphPage/>
             </view:FourContentSwitchingControl.Content1>
             <view:FourContentSwitchingControl.Content2>
-                <TextBlock Text="2"/>
+                <view:CalendarPageControl/>
             </view:FourContentSwitchingControl.Content2>
             <view:FourContentSwitchingControl.Content3>
-                <TextBlock Text="3"/>
+                <view:PulsePage DataContext="{Binding PulseViewModel}"/>
             </view:FourContentSwitchingControl.Content3>
         </view:FourContentSwitchingControl>
     </Grid>

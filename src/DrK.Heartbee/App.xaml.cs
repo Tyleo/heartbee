@@ -24,7 +24,9 @@ namespace DrK.Heartbee
                     AppResources.calendarRedIconSource,
                     AppResources.pulseIconSource,
                     AppResources.pulseRedIconSource
-                )
+                ),
+                new MultibeatViewModel(),
+                new PulseViewModel()
             );
 
         public MainViewModel MainViewModel { get { return _mainViewModel; } }

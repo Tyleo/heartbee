@@ -110,12 +110,23 @@
     <Compile Include="Utilities\Managers\NotifyPropertyChangedAsyncFlags.cs" />
     <Compile Include="Utilities\Managers\NotifyPropertyChangedManager.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MultibeatViewModel.cs" />
+    <Compile Include="ViewModel\PulseViewModel.cs" />
     <Compile Include="ViewModel\SelectorBarViewModel.cs" />
+    <Compile Include="View\CalendarPageControl.xaml.cs">
+      <DependentUpon>CalendarPageControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\FourContentSwitchingControl.xaml.cs">
       <DependentUpon>FourContentSwitchingControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CenterHeartbeat.xaml.cs">
       <DependentUpon>CenterHeartbeat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GraphControl.xaml.cs">
+      <DependentUpon>GraphControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\GraphPage.xaml.cs">
+      <DependentUpon>GraphPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\HeartbeeControl.xaml.cs">
       <DependentUpon>HeartbeeControl.xaml</DependentUpon>
@@ -125,6 +136,9 @@
     </Compile>
     <Compile Include="View\MultibeatControl.xaml.cs">
       <DependentUpon>MultibeatControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PulsePage.xaml.cs">
+      <DependentUpon>PulsePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SelectorBarControl.xaml.cs">
       <DependentUpon>SelectorBarControl.xaml</DependentUpon>
@@ -139,11 +153,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\CalendarPageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\FourContentSwitchingControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CenterHeartbeat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GraphControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\GraphPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,6 +182,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MultibeatControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PulsePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -180,11 +210,13 @@
     <Content Include="Assets\bar-graph.png" />
     <Content Include="Assets\calendar-red.png" />
     <Content Include="Assets\calendar.png" />
+    <Content Include="Assets\graph.png" />
     <Content Include="Assets\heart-red.png" />
     <Content Include="Assets\heart.png" />
     <Content Include="Assets\heartbee.png" />
     <Content Include="Assets\heartbee-unhappy.png" />
     <Content Include="Assets\Heartwave.png" />
+    <Content Include="Assets\pulse-green.png" />
     <Content Include="Assets\pulse-red.png" />
     <Content Include="Assets\pulse.png" />
     <Content Include="Assets\redwave.png" />
@@ -221,6 +253,9 @@
   <ItemGroup>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPControls">
+      <HintPath>..\packages\WPControls.1.5.2\lib\wp8\WPControls.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
