@@ -1,4 +1,0 @@
-heartbee
-========
-
-The real heartbee.
