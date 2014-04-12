@@ -111,5 +111,11 @@ namespace DrK.Heartbee.ViewModel
             _image3Source1 = image3Source1;
             _selectedIndex = selectedIndex;
         }
+
+        event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged
+        {
+            add { throw new NotImplementedException(); }
+            remove { throw new NotImplementedException(); }
+        }
     }
 }

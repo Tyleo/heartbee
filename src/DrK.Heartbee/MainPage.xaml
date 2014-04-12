@@ -6,20 +6,31 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:DrK.Heartbee.View"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
-    
-    <Grid Height="100" VerticalAlignment="Top">
+
+    <Grid Height="800" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
         <Border Grid.Column="0" BorderBrush="White" BorderThickness="2">
             <Button Margin="0" BorderThickness="0">
@@ -40,6 +51,15 @@
             <Button Margin="0" BorderThickness="0">
                 <Image Source="/Assets/pulse.png"/>
             </Button>
-        </Border>
+        </Border> 
+        
+        <view:CenterHeartbeat Grid.Column ="1" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2" />        
+        <view:MultibeatControl Grid.Column ="0" Grid.ColumnSpan="4"  Grid.Row ="7"/>
+
+
+
     </Grid>
+    
+    
+
 </phone:PhoneApplicationPage>

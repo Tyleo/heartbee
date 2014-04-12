@@ -109,6 +109,9 @@
     <Compile Include="Utilities\Managers\NotifyPropertyChangedAsyncFlags.cs" />
     <Compile Include="Utilities\Managers\NotifyPropertyChangedManager.cs" />
     <Compile Include="ViewModel\SelectorBarModel.cs" />
+    <Compile Include="View\CenterHeartbeat.xaml.cs">
+      <DependentUpon>CenterHeartbeat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MultibeatControl.xaml.cs">
       <DependentUpon>MultibeatControl.xaml</DependentUpon>
     </Compile>
@@ -122,6 +125,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CenterHeartbeat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

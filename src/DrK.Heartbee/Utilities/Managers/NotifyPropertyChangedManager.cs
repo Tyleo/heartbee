@@ -55,11 +55,11 @@ namespace DrK.Heartbee.Utilities.Managers
 
             if (_notifyPropertyChangedAsyncFlags.HasFlag(NotifyPropertyChangedAsyncFlags.RaisePropertyChangedAsync))
             {
-                PropertyChanged.InvokeIfInstantiatedAsync(_sender, new PropertyChangedEventArgs(propertyName));
+                //PropertyChanged.InvokeIfInstantiatedAsync(_sender, new PropertyChangedEventArgs(propertyName));
             }
             else
             {
-                PropertyChanged.InvokeIfInstantiated(_sender, new PropertyChangedEventArgs(propertyName));
+                //PropertyChanged.InvokeIfInstantiated(_sender, new PropertyChangedEventArgs(propertyName));
             }
         }
     }
