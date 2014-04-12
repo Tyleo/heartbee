@@ -16,6 +16,7 @@ namespace DrK.Heartbee
         // Constructor
         public MainPage()
         {
+            DataContext = ((DrK.Heartbee.App)App.Current).MainViewModel;
             InitializeComponent();
 
             // Sample code to localize the ApplicationBar

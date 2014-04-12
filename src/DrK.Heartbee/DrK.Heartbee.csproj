@@ -106,9 +106,11 @@
     <Compile Include="Utilities\Classes\ActionCommand.cs" />
     <Compile Include="Utilities\Extensions\EventHandlerExtensions.cs" />
     <Compile Include="Utilities\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Utilities\Extensions\PropertyChangedEventHandlerExtensions.cs" />
     <Compile Include="Utilities\Managers\NotifyPropertyChangedAsyncFlags.cs" />
     <Compile Include="Utilities\Managers\NotifyPropertyChangedManager.cs" />
-    <Compile Include="ViewModel\SelectorBarModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\SelectorBarViewModel.cs" />
     <Compile Include="View\MultibeatControl.xaml.cs">
       <DependentUpon>MultibeatControl.xaml</DependentUpon>
     </Compile>
@@ -146,10 +148,14 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\bar-graph-red.png" />
     <Content Include="Assets\bar-graph.png" />
+    <Content Include="Assets\calendar-red.png" />
     <Content Include="Assets\calendar.png" />
+    <Content Include="Assets\heart-red.png" />
     <Content Include="Assets\heart.png" />
     <Content Include="Assets\Heartwave.png" />
+    <Content Include="Assets\pulse-red.png" />
     <Content Include="Assets\pulse.png" />
     <Content Include="Assets\redwave.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
