@@ -13,18 +13,18 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
-    
-    <Grid>
+    <view:SelectorBar Grid.Row="0" DataContext="{Binding SelectorBarViewModel}" VerticalAlignment="Top" Height="100"/>
+    <!--<Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <view:SelectorBar Grid.Row="0" DataContext="{Binding SelectorBarViewModel}" VerticalAlignment="Top" Height="100"/>
+        
         <view:FourContentSwitchingControl Grid.Row="1">
             <view:FourContentSwitchingControl.Content0>
                 <Button/>
             </view:FourContentSwitchingControl.Content0>
 
         </view:FourContentSwitchingControl>
-    </Grid>
+    </Grid>-->
 </phone:PhoneApplicationPage>
